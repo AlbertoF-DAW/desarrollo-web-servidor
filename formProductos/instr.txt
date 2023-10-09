@@ -1,7 +1,0 @@
-1. hacer array
-
-2. mostrar tabla
-
-3. hacer formulario
-
-4. insertar producto de formulario a tabla
