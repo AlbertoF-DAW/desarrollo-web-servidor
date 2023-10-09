@@ -1,0 +1,53 @@
+* {
+    padding: .5rem;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,
+body {
+    background-color: slategray;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: burlywood;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: slateblue;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: aquamarine;
+}
+
+tfoot td,
+tfoot th {
+    background-color: aquamarine;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
