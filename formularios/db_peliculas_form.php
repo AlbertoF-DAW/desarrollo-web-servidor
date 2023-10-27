@@ -11,6 +11,7 @@
         }
     </style>
     <?php require '../funciones/db_peliculas_func.php'; ?>
+    <?php require '../objetos/pelicula.php'; ?>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 if (!is_numeric($temp_id)) {
                     $err_id = "El ID debe ser un numero";
                 } else {
-
+                    $id = (int) $temp_id;
                 }
             }
             # Validación titulo
@@ -33,18 +34,21 @@
             if (strlen($temp_titulo) == 0) {
                 $err_titulo = "El titulo no puede quedar vacio";
             } else {
+                $titulo = $temp_titulo;
             }
             # Validación fecha estreno
             $temp_fecha = depurar($_POST['fecha']);
             if (strlen($temp_fecha) == 0) {
                 $err_fecha = "La fecha de estreno no puede quedar vacio";
             } else {
+                $fecha = new DateTime($temp_fecha);
             }
             # Validación edad recomendada
             $temp_edad_rec = depurar($_POST['edad_rec']);
             if (strlen($temp_edad_rec) == 0) {
                 $err_edad_rec = "La edad recomendada no puede quedar vacio";
             } else {
+                $edad_rec = $temp_edad_rec;
             }
         }
     }
